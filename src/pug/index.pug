@@ -3,6 +3,7 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="css/style.css")
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css' integrity='sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk' crossorigin='anonymous')
     title My Diploma Project
   body
 
@@ -69,9 +70,20 @@ html(lang="en")
         .button-slidedown
           img(src="../img/slider-down.png", alt="slider-down")
 
+      section.process
+        .container
+          .process-head Our 
+            span.process-head-red process
+          .process-content Daisy is sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+          .process-img 
+            img(src="../img/our-process.png", alt="process")
+          .button-slidedown-white
+            img(src="../img/slider-down-white.png", alt="slider-down")
+
       section.we-do
         .container
-          .we-do-head What do we do?
+          .we-do-head What do 
+            span.we-do-red we do?
           .we-do-wrapper
             .we-do-text
               .text-block-title Landing pages
@@ -156,4 +168,109 @@ html(lang="en")
           .button-slidedown
             img(src="../img/slider-down-white.png", alt="")
 
+      section.team
+        .container
+          .team-title OUR 
+            span.grey TEAM
+          .team-wrapper
+            .team-wrapper-block
+              .team-wr-img
+                img(src="../img/tomothy-bowman.png", alt="Tomothy Bowman")
+              .team-wr-name Tomothy 
+                span.grey Bowman
+              .team-wr-job Marketing
+              .team-wr-social
+                .tw-img
+                  img(src="../img/twitter.png", alt="twitter")
+                .fb-img
+                  img(src="../img/fb.png", alt="FB")
+                .linked-img
+                  img(src="../img/linked-in.png", alt="linked in")
+            
+            .team-wrapper-block
+              .team-wr-img
+                img(src="../img/steve-tracy.png", alt="Steve Tracy")
+              .team-wr-name Steve 
+                span.grey Tracy
+              .team-wr-job CEO
+              .team-wr-social
+                .tw-img
+                  img(src="../img/twitter.png", alt="twitter")
+                .fb-img
+                  img(src="../img/fb.png", alt="FB")
+                .linked-img
+                  img(src="../img/linked-in.png", alt="linked in")
 
+            .team-wrapper-block
+              .team-wr-img
+                img(src="../img/hellen-johns.png", alt="Hellen Johns")
+              .team-wr-name Hellen 
+                span.grey Johns
+              .team-wr-job Clients
+              .team-wr-social
+                .tw-img
+                  img(src="../img/twitter.png", alt="twitter")
+                .fb-img
+                  img(src="../img/fb.png", alt="FB")
+                .linked-img
+                  img(src="../img/linked-in.png", alt="linked in")
+
+          .button-slidedown-white
+            img(src="../img/slider-down-white.png", alt="slider-down")
+
+      section.slider 
+        .container
+          #carouselExampleFade.carousel.slide.carousel-fade(data-ride='carousel')
+            .carousel-inner
+              .carousel-item.active
+                .quote-sign
+                  img(src="../img/quote.png", alt="quote")
+                .quote-content
+                  .quote-cnt-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conse
+                  .quote-cnt-img
+                    img(src='../img/carousel-item.png', alt='Quote')
+                  .quote-cnt-author
+                    .author-name Alan Richman
+                    .author-job CEO of Romashka
+              .carousel-item
+                .quote-sign
+                  img(src="../img/quote.png", alt="quote")
+                .quote-content
+                  .quote-cnt-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conse
+                  .quote-cnt-img
+                    img(src='../img/carousel-item.png', alt='Quote')
+                  .quote-cnt-author
+                    .author-name Alan Richman
+                    .author-job CEO of Romashka
+              .carousel-item
+                .quote-sign
+                  img(src="../img/quote.png", alt="quote")
+                .quote-content
+                  .quote-cnt-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit conse
+                  .quote-cnt-img
+                    img(src='../img/carousel-item.png', alt='Quote')
+                  .quote-cnt-author
+                    .author-name Alan Richman
+                    .author-job CEO of Romashka
+            a.carousel-control-prev(href='#carouselExampleFade', role='button', data-slide='prev')
+              span.carousel-control-prev-icon(aria-hidden='true')
+                img(src="../img/slider-left.png", alt="slider-left")
+              span.sr-only Previous
+            a.carousel-control-next(href='#carouselExampleFade', role='button', data-slide='next')
+              span.carousel-control-next-icon(aria-hidden='true')
+                img(src="../img/slider-right.png", alt="slider-right")
+              span.sr-only Next
+      
+      section.map
+        .google-map
+          iframe(width='100%', height='350', frameborder='0', scrolling='no', marginheight='0', marginwidth='0', src='https://maps.google.com/maps?width=100%25&height=350&hl=en&q=1%20Grafton%20St615%204th%20Ave%20S,%20Jacksonville%20Beach,%20FL%2032250reet,%20Dublin,%20Ireland+(My%20Business%20Name)&t=&z=14&ie=UTF8&iwloc=B&output=embed')
+          .adress
+            img(src="../img/adress.png", alt="adress")
+
+      footer
+        .footer-logo
+          img(src="../img/footer-logo.png", alt="footer-logo")
+
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js' integrity='sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI' crossorigin='anonymous')
