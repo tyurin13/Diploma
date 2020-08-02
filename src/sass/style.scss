@@ -288,6 +288,7 @@ nav {
   .process-img {
     margin-bottom: 20px;
     text-align: center;
+    max-width: 100%;
   }
 }
 
@@ -608,7 +609,7 @@ nav {
       flex-direction: row;
       justify-content: space-evenly;
       margin-top: 100px;
-      margin-right: 170px;
+      margin-right: 130px;
       
       .quote-cnt-text {
         font-size: 15px;

@@ -204,7 +204,8 @@ nav {
     text-align: center; }
   .process .process-img {
     margin-bottom: 20px;
-    text-align: center; }
+    text-align: center;
+    max-width: 100%; }
 
 .we-do, .we-do-copy {
   background-color: #f2f2f2;
@@ -430,7 +431,7 @@ nav {
       flex-direction: row;
       justify-content: space-evenly;
       margin-top: 100px;
-      margin-right: 170px; }
+      margin-right: 130px; }
       .slider .carousel-item .quote-content .quote-cnt-text, .slider .active .quote-content .quote-cnt-text {
         font-size: 15px;
         color: #969696;
