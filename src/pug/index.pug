@@ -12,19 +12,29 @@ html(lang="en")
         nav
           .logo 
             img(src="../img/daisy-logo.png", alt="Daisy logo")
-          .nav-li About
-          .nav-li Portfolio
-          .nav-li Services
-          .nav-li Contact
+            span  Daisy
+          .nav-li
+            a(href="#") About
+          .nav-li
+            a(href="#") Portfolio
+          .nav-li 
+            a(href="#") Services
+          .nav-li
+            a(href="#") Contact
         
         .header-text
-          .upper-text Clients 
-            span.upper-text-white in your business
+          .hd-text-block
+            .block-line
+            .upper-text Clients 
+              span.upper-text-white in your business
+            .block-line
           .lower-text Your clients on the internet. Learn how to receive them.
-          .button-text I want clients
+          .button-text 
+            a(href="#") I want clients
 
         .button-slidedown
-          img(src="../img/slider-down.png", alt="slider-down")
+          a(href="#you-receive")
+            img(src="../img/slider-down.png", alt="slider-down")
 
 
     main
@@ -60,15 +70,19 @@ html(lang="en")
               .wrapper-text This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean 
           
           .button-slidedown-white
-            img(src="../../img/slider-down-white.png", alt="slider-down-white")
+            a(href="#expand-ur-business")
+              img(src="../../img/slider-down-white.png", alt="slider-down-white")
 
       section.expand-ur-business
 
-        .expand-text EXPAND 
-          span.expand-text-white YOUR BUSINESS
-        .expand-button Join Us
+        .container.expand-content
+          .expand-text EXPAND 
+            span.expand-text-white YOUR BUSINESS
+          .expand-button 
+            a(href="#") Join Us
         .button-slidedown
-          img(src="../img/slider-down.png", alt="slider-down")
+          a(href="#process")
+            img(src="../img/slider-down.png", alt="slider-down")
 
       section.process
         .container
@@ -78,7 +92,8 @@ html(lang="en")
           .process-img 
             img(src="../img/our-process.png", alt="process")
           .button-slidedown-white
-            img(src="../img/slider-down-white.png", alt="slider-down")
+            a(href="#we-do")
+              img(src="../img/slider-down-white.png", alt="slider-down")
 
       section.we-do
         .container
@@ -88,11 +103,13 @@ html(lang="en")
             .we-do-text
               .text-block-title Landing pages
               .text-block-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a 
-              .we-do-button More details
+              .we-do-button 
+                a(href="#") More details
             .we-do-image
               img(src="../img/apple-devices.png", alt="apple-devices")
-          .button-slidedown-white
-            img(src="../img/slider-down-white.png", alt="slider-down")
+          .button-slidedown-grey
+            a(href="#ads")
+              img(src="../img/slider-down-grey.png", alt="slider-down")
 
       section.ads
         .container
@@ -102,21 +119,25 @@ html(lang="en")
             .ads-text
               .ads-title Advertising
               .ads-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam
-              .ads-button More details
+              .ads-button 
+                a(href="#") More details
           .button-slidedown-white
-            img(src="../img/slider-down-white.png", alt="slider-down")
+            a(href="#we-do-copy")  
+              img(src="../img/slider-down-white.png", alt="slider-down")
       
-      section.we-do
+      section.we-do-copy
         .container
           .we-do-wrapper.marketing
             .we-do-text
               .text-block-title Marketing kit
               .text-block-content This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam 
-              .we-do-button More details
+              .we-do-button 
+                a(href="#") More details
             .we-do-image
               img(src="../img/MK.png", alt="marketing kit")
-          .button-slidedown-white
-            img(src="../img/slider-down-white.png", alt="slider-down")
+          .button-slidedown-grey
+            a(href="#portfolio")
+              img(src="../img/slider-down-grey.png", alt="slider-down")
 
       section.portfolio
         .container
@@ -135,38 +156,46 @@ html(lang="en")
           .pf-wrapper
             .pf-wr-block
               img(src="../img/portfolio-1.png", alt="bike")
-              .pf-hover-block
-                .pf-hover-text1 Mountain bikes
-                .pf-hover-text2 +
+              a(href="#")
+                .pf-hover-block
+                  .pf-hover-text1 Mountain bikes
+                  .pf-hover-text2 +
             .pf-wr-block
               img(src="../img/portfolio-6.png", alt="paint")
-              .pf-hover-block
-                .pf-hover-text1 Art
-                .pf-hover-text2 +            
+              a(href="#")
+                .pf-hover-block
+                  .pf-hover-text1 Art
+                  .pf-hover-text2 +            
             .pf-wr-block
               img(src="../img/portfolio-5.png", alt="bus")
-              .pf-hover-block
-                .pf-hover-text1 Transport
-                .pf-hover-text2 +            
+              a(href="#")
+                .pf-hover-block
+                  .pf-hover-text1 Transport
+                  .pf-hover-text2 +            
             .pf-wr-block
               img(src="../img/portfolio-3.png", alt="books")  
-              .pf-hover-block
-                .pf-hover-text1 Presents
-                .pf-hover-text2 +            
+              a(href="#")
+                .pf-hover-block
+                  .pf-hover-text1 Presents
+                  .pf-hover-text2 +            
             .pf-wr-block
               img(src="../img/portfolio-4.png", alt="study")
-              .pf-hover-block
-                .pf-hover-text1 Soft
-                .pf-hover-text2 +            
+              a(href="#")
+                .pf-hover-block
+                  .pf-hover-text1 Soft
+                  .pf-hover-text2 +            
             .pf-wr-block
               img(src="../img/portfolio-2.png", alt="cars")
-              .pf-hover-block
-                .pf-hover-text1 Cars
-                .pf-hover-text2 +
+              a(href="#")
+                .pf-hover-block
+                  .pf-hover-text1 Cars
+                  .pf-hover-text2 +
 
-          .pf-button I want landing page
+          .pf-button 
+            a(href="#") I want landing page
           .button-slidedown
-            img(src="../img/slider-down-white.png", alt="")
+            a(href="#team")
+              img(src="../img/slider-down-white.png", alt="")
 
       section.team
         .container
@@ -181,11 +210,14 @@ html(lang="en")
               .team-wr-job Marketing
               .team-wr-social
                 .tw-img
-                  img(src="../img/twitter.png", alt="twitter")
+                  a(href="#")
+                    img(src="../img/twitter.png", alt="twitter")
                 .fb-img
-                  img(src="../img/fb.png", alt="FB")
+                  a(href="#")
+                    img(src="../img/fb.png", alt="FB")
                 .linked-img
-                  img(src="../img/linked-in.png", alt="linked in")
+                  a(href="#")
+                    img(src="../img/linked-in.png", alt="linked in")
             
             .team-wrapper-block
               .team-wr-img
@@ -195,11 +227,14 @@ html(lang="en")
               .team-wr-job CEO
               .team-wr-social
                 .tw-img
-                  img(src="../img/twitter.png", alt="twitter")
+                  a(href="#")
+                    img(src="../img/twitter.png", alt="twitter")
                 .fb-img
-                  img(src="../img/fb.png", alt="FB")
+                  a(href="#")
+                    img(src="../img/fb.png", alt="FB")
                 .linked-img
-                  img(src="../img/linked-in.png", alt="linked in")
+                  a(href="#")
+                    img(src="../img/linked-in.png", alt="linked in")
 
             .team-wrapper-block
               .team-wr-img
@@ -209,14 +244,18 @@ html(lang="en")
               .team-wr-job Clients
               .team-wr-social
                 .tw-img
-                  img(src="../img/twitter.png", alt="twitter")
+                  a(href="#")
+                    img(src="../img/twitter.png", alt="twitter")
                 .fb-img
-                  img(src="../img/fb.png", alt="FB")
+                  a(href="#")
+                    img(src="../img/fb.png", alt="FB")
                 .linked-img
-                  img(src="../img/linked-in.png", alt="linked in")
+                  a(href="#")
+                    img(src="../img/linked-in.png", alt="linked in")
 
-          .button-slidedown-white
-            img(src="../img/slider-down-white.png", alt="slider-down")
+          .button-slidedown-grey
+            a(href="#slider")
+              img(src="../img/slider-down-grey.png", alt="slider-down")
 
       section.slider 
         .container
@@ -230,7 +269,8 @@ html(lang="en")
                   .quote-cnt-img
                     img(src='../img/carousel-item.png', alt='Quote')
                   .quote-cnt-author
-                    .author-name Alan Richman
+                    .author-name Alan 
+                      span.auth-nm-grey Richman
                     .author-job CEO of Romashka
               .carousel-item
                 .quote-sign
@@ -240,7 +280,8 @@ html(lang="en")
                   .quote-cnt-img
                     img(src='../img/carousel-item.png', alt='Quote')
                   .quote-cnt-author
-                    .author-name Alan Richman
+                    .author-name Alan 
+                      span.auth-nm-grey Richman
                     .author-job CEO of Romashka
               .carousel-item
                 .quote-sign
@@ -250,7 +291,8 @@ html(lang="en")
                   .quote-cnt-img
                     img(src='../img/carousel-item.png', alt='Quote')
                   .quote-cnt-author
-                    .author-name Alan Richman
+                    .author-name Alan 
+                      span.auth-nm-grey Richman
                     .author-job CEO of Romashka
             a.carousel-control-prev(href='#carouselExampleFade', role='button', data-slide='prev')
               span.carousel-control-prev-icon(aria-hidden='true')
@@ -269,7 +311,9 @@ html(lang="en")
 
       footer
         .footer-logo
-          img(src="../img/footer-logo.png", alt="footer-logo")
+          .footer-img
+            img(src="../img/footer-logo.png", alt="footer-logo")
+          .footer-text Daisy
 
     script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
     script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js' integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo' crossorigin='anonymous')
