@@ -589,64 +589,76 @@ nav {
 .slider {
   padding: 50px 0 30px 0;
 
-  .carousel-inner {
-    position: relative;
+  .quote-sign {
+    margin: 0 auto;
+    text-align: center;
   }
 
-  .carousel-item, .active {
+  .quote-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-right: 130px;
 
-    .quote-sign {
-      margin: 0 auto;
+    .quote-cnt-text {
+      font-size: 15px;
+      color: #969696;
       text-align: center;
+      margin: auto 0;
+      max-width: 37%;
     }
 
-    .quote-content {
+    .quote-cnt-author {
       display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      margin-top: 100px;
-      margin-right: 130px;
-      
-      .quote-cnt-text {
-        font-size: 15px;
+      flex-direction: column;
+      margin: auto 0;
+
+        .auth-nm-grey {
+          color: #868686;
+        }
+
+      .author-name {
+        font-size: 28px;
+        color: #fc635e;
+        font-weight: bold;
+        text-align: left;
+      }
+
+      .author-job {
+        margin-top: 20px;
+        text-align: left;
         color: #969696;
-        text-align: center;
-        margin: auto 0;
-        max-width: 37%;
-      }
-
-      .quote-cnt-author {
-        display: flex;
-        flex-direction: column;
-        margin: auto 0;
-
-          .auth-nm-grey {
-            color: #868686;
-          }
-
-        .author-name {
-          font-size: 28px;
-          color: #fc635e;
-          font-weight: bold;
-          text-align: left;
-        }
-
-        .author-job {
-          margin-top: 20px;
-          text-align: left;
-          color: #969696;
-        }
       }
     }
+  }
 
-    .carousel-control-prev, .carousel-control-next,
-    .carousel-control-prev-con, .carousel-control-next-icon {
-      position: absolute;
-      bottom: 0;
-      left: 600px;
-    }
+  .carousel-control-prev-icon {
+    background-image: url("/img/slider-left.png");
+  }
+
+  .carousel-control-next-icon {
+    background-image: url("/img/slider-right.png");
+  }
+
+  .carousel-inner {
+    padding-bottom: 100px;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: unset;
+    width: auto;
+  }
+
+  .carousel-control-prev {
+    left: 50%;
+    transform: translateX(-150%);
+  }
+
+  .carousel-control-next {
+    right: 50%;
+    transform: translateX(150%);
   }
 }
 
@@ -692,5 +704,9 @@ footer {
       font-size: 30px;
     }
   }
+}
+
+#you-receive:target {
+  transition: all 1s ease-in-out;
 }
 
